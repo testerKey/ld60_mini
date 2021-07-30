@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="1" failures="1" hostname="E0004929GM" name="pytest" skipped="0" tests="21" time="1163.689" timestamp="2021-07-21T08:54:54.958349"><testcase classname="test_dir.test_a_kernel.TestKernel" name="test_sanity_2" time="126.923" /><testcase classname="test_dir.test_a_kernel.TestKernel" name="test_sanity_8" time="15.935" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_15" time="55.034" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_16" time="34.674" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_17" time="33.417" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_18" time="33.175" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_19" time="34.549" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_20" time="34.272" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_21" time="59.932" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_22" time="58.942" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_23" time="56.062" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_24" time="75.551" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_25" time="35.850" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_26" time="114.585"><failure message="assert False is True">self = &lt;sanity_ld60_mini.test_dir.test_d_musicplayback.TestMusicplayback object at 0x000001A8FA3F3668&gt;
+driver = &lt;appium.webdriver.webdriver.WebDriver (session="7c055c60-0b0e-4b63-8d0b-6cfbc5edb462")&gt;
+
+    def test_sanity_26(self, driver):
+        page = MusicPage(driver)
+        page.click_music_26()
+        result = page.playback_music(*page.music_26_name)
+&gt;       assert result is True
+E       assert False is True
+
+test_dir\test_d_musicplayback.py:38: AssertionError</failure></testcase><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_27" time="75.382" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_28" time="76.046" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_29" time="36.306" /><testcase classname="test_dir.test_e_pictureplayback.TestPictureplayback" name="test_sanity_30" time="36.714" /><testcase classname="test_dir.test_e_pictureplayback.TestPictureplayback" name="test_sanity_31_1" time="18.158" /><testcase classname="test_dir.test_f_audiooutput.TestAudio" name="test_sanity_36" time="148.803" /><testcase time="0.002" /><testcase classname="pytest" name="internal" time="0.000"><error message="internal error">Traceback (most recent call last):
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\_pytest\main.py", line 269, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\_pytest\main.py", line 323, in _main
+    config.hook.pytest_runtestloop(session=session)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\manager.py", line 87, in &lt;lambda&gt;
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\_pytest\main.py", line 348, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\manager.py", line 87, in &lt;lambda&gt;
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+    return outcome.get_result()
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\callers.py", line 80, in get_result
+    raise ex[1].with_traceback(ex[2])
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\_pytest\runner.py", line 109, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\_pytest\runner.py", line 126, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\_pytest\runner.py", line 217, in call_and_report
+    report: TestReport = hook.pytest_runtest_makereport(item=item, call=call)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\manager.py", line 87, in &lt;lambda&gt;
+    firstresult=hook.spec.opts.get("firstresult") if hook.spec else False,
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\pluggy\callers.py", line 203, in _multicall
+    gen.send(outcome)
+  File "C:\Python_tools\sanity_ld60_mini\conftest.py", line 68, in pytest_runtest_makereport
+    capture_screenshots(case_name)
+  File "C:\Python_tools\sanity_ld60_mini\conftest.py", line 116, in capture_screenshots
+    driver.get_screenshot_as_file(image_dir)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1032, in get_screenshot_as_file
+    png = self.get_screenshot_as_png()
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1064, in get_screenshot_as_png
+    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1074, in get_screenshot_as_base64
+    return self.execute(Command.SCREENSHOT)['value']
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\appium\webdriver\errorhandler.py", line 31, in check_response
+    raise wde
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\appium\webdriver\errorhandler.py", line 26, in check_response
+    super().check_response(response)
+  File "C:\Python_tools\sanity_ld60_mini\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details</error></testcase></testsuite></testsuites>

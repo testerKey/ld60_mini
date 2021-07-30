@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="2" hostname="E0004929GM" name="pytest" skipped="0" tests="26" time="1545.176" timestamp="2021-07-21T09:19:12.062868"><testcase classname="test_dir.test_a_kernel.TestKernel" name="test_sanity_2" time="123.307" /><testcase classname="test_dir.test_a_kernel.TestKernel" name="test_sanity_8" time="16.683" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_15" time="55.615" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_16" time="34.907" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_17" time="33.504" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_18" time="33.437" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_19" time="34.112" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_20" time="34.209" /><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_21" time="69.503"><failure message="assert False is True">self = &lt;sanity_ld60_mini.test_dir.test_c_videoplayback.TestVideoplayback object at 0x00000230A62102E8&gt;
+driver = &lt;appium.webdriver.webdriver.WebDriver (session="7050d199-c6a4-4481-a900-314d25686525")&gt;
+
+    def test_sanity_21(self, driver):
+        page = VideoPage(driver)
+        page.click_video_21()
+        result = page.playback_video(*page.video_21_name)
+&gt;       assert result is True
+E       assert False is True
+
+test_dir\test_c_videoplayback.py:55: AssertionError</failure></testcase><testcase classname="test_dir.test_c_videoplayback.TestVideoplayback" name="test_sanity_22" time="62.790" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_23" time="56.305" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_24" time="50.285" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_25" time="75.526" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_26" time="113.209"><failure message="assert False is True">self = &lt;sanity_ld60_mini.test_dir.test_d_musicplayback.TestMusicplayback object at 0x00000230A6255710&gt;
+driver = &lt;appium.webdriver.webdriver.WebDriver (session="2a2d4684-a077-4e97-be03-98778d3526dd")&gt;
+
+    def test_sanity_26(self, driver):
+        page = MusicPage(driver)
+        page.click_music_26()
+        result = page.playback_music(*page.music_26_name)
+&gt;       assert result is True
+E       assert False is True
+
+test_dir\test_d_musicplayback.py:38: AssertionError</failure></testcase><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_27" time="75.013" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_28" time="75.441" /><testcase classname="test_dir.test_d_musicplayback.TestMusicplayback" name="test_sanity_29" time="36.882" /><testcase classname="test_dir.test_e_pictureplayback.TestPictureplayback" name="test_sanity_30" time="37.035" /><testcase classname="test_dir.test_e_pictureplayback.TestPictureplayback" name="test_sanity_31_1" time="18.159" /><testcase classname="test_dir.test_f_audiooutput.TestAudio" name="test_sanity_36" time="147.905" /><testcase classname="test_dir.test_f_audiooutput.TestAudio" name="test_sanity_37" time="128.875" /><testcase classname="test_dir.test_mediascanner.TestMediaScanner" name="test_sanity_61" time="40.296" /><testcase classname="test_dir.test_mediascanner.TestMediaScanner" name="test_sanity_62" time="13.342" /><testcase classname="test_dir.test_wifi.TestWifi" name="test_function_02_detection_hf02" time="32.667" /><testcase classname="test_dir.test_wifi.TestWifi" name="test_function_03_baidu_hf02" time="0.021" /><testcase classname="test_dir.test_wifi.TestWifi" name="test_function_04_restart_hf02" time="115.649" /></testsuite></testsuites>
